@@ -13,7 +13,7 @@ client = OpenAI(api_key=OPENAI_API_KEY)
 
 response = client.responses.create(
     model="gpt-5.4",
-    input="Write a short bedtime story about a unicorn."
+    input="Write a short bedtime story."
 )
 
 print(response.output_text)
@@ -23,7 +23,7 @@ print(response.output_text)
 response = client.responses.create(
     model="gpt-5.4",
     input=[
-        {"role": "user", "content": "a+2=7, find a"},
+        {"role": "user", "content": "a+5=7, find a"},
         {"role": "system", "content": "act like a math teacher"}
     ]
 )
@@ -33,7 +33,7 @@ print(response.output_text)
 # In[5]:
 response = client.responses.create(
     model="gpt-5.4",
-    input="a+2=7, find a"
+    input="a+5=7, find a"
 )
 
 print(response.output_text)
@@ -116,19 +116,25 @@ assistant.summarize_email()
 
 # In[12]:
 # Sample Email
-""" Dear Shradha Ma'am,
+""" Dear Sir/Madam,
 
-I hope this email finds you well.  I am reaching out to request a meeting at a time convenient for you to discuss the performance of our tech team over the past quarter.
+I hope you are doing well.
 
-Over the past few months, the team has been working on several critical projects, and I would like to review both our achievements and areas where we can improve. This discussion will help us identify opportunities for increased efficiency, address any challenges the team may be facing, and ensure we are aligned with organizational objectives.
+My name is Himesh, and I am currently pursuing a B.Tech in Artificial Intelligence and Machine Learning. I am writing to express my interest in internship opportunities within your organization.
 
-Please let me know your availability in the coming week, and I will be happy to coordinate a time that works best for you. I anticipate that the meeting will take approximately 30–45 minutes, and I will prepare a brief overview of the team’s performance metrics for our discussion.
+I have been actively working on AI/ML projects and continuously improving my skills in Python, Machine Learning, Deep Learning, Data Structures & Algorithms, and Web Development. I am eager to apply my knowledge in a practical environment and gain industry experience.
 
-Thank you for your time and consideration. I look forward to our conversation and to collaboratively identifying ways to strengthen our tech team’s performance.
+I would be grateful if you could consider my application for any suitable internship positions. I have attached my resume for your review.
 
-Warm regards,
-Rahul Kumar
-Project Manager """
+Thank you for your time and consideration. I look forward to hearing from you.
+
+Sincerely,
+
+Himesh
+B.Tech (AI & ML)
+Email:(mailto:your_email@example.com)
+Phone: +91 XXXXX XXXXX
+ """
 
 # ## Images in OpenAI
 
